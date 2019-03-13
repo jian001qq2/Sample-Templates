@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login Form Sample</title>
+    <style>
+        body {
+            margin:0;
+            padding:0;
+            font-family: 'Courier New', Courier, monospace;
+            background: #34495e;
+        }
+        /*Styling for the entire form*/
+        .form-content{
+            width: 350px;
+            padding:40px;
+            position: absolute;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            background: #191919;
+            text-align: center;
+        }
+        .form-content h1{
+            color:white;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        .form-content input[type="text"],.form-content input[type="password"]{
+           width:200px;
+            border:0;
+            background:none;
+            display:block;
+            margin:20px auto;
+            text-align: center;
+            border:2px solid #3498db;
+            padding:15x 10px;
+            font-size:40px;
+            outline:none;
+            color:white;
+            border-radius: 25px;
+            transition:0.25s;
+
+        }
+        .form-content input[type="text"]:focus,.form-content input[type="password"]:focus{
+width:280px;
+border-color:#2cee18;
+        }
+        .form-content input[type="submit"]{
+          
+            border:0;
+            background:none;
+            display:block;
+            margin:20px auto;
+            text-align: center;
+            border:2px solid #2ecc71;
+            padding:15x 40px;
+            outline:none;
+            color:white;
+            border-radius: 25px;
+            transition:0.25s;
+            font-size: 20px;
+            width:150px;
+            cursor:pointer;
+        }
+        .form-content input[type="submit"]:hover{
+            background: #2ecc71;
+        }
+    </style>
+</head>
+<body>
+    <div class="sample-one">
+        <form class="form-content"action="index.html" method="POST">
+            <h1>Login</h1>
+            <input type="text" placeholder="Username">
+            <input type="password"placeholder="Password">
+            <input type="submit" value="Login">
+        </form>
+    </div>
+</body>
+</html>
